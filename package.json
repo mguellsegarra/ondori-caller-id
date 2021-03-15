@@ -1,0 +1,31 @@
+{
+  "name": "ondori-caller-id",
+  "version": "0.0.1",
+  "description": "Caller ID module for React Native",
+  "main": "index.js",
+  "files": [
+    "android",
+    "ios",
+    "ONDCallerId.podspec"
+  ],
+  "keywords": [
+    "react-native",
+    "caller-id"
+  ],
+  "author": {
+    "name": "Marc Güell Segarra",
+    "email": "marc@ondori.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mguellsegarra/ondori-caller-id"
+  },
+  "nativePackage": true,
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.63.2"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
