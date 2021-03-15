@@ -1,7 +1,7 @@
 #import "CallDirectoryHandler.h"
 
 #define DATA_KEY @"CALLER_LIST"
-#define APP_GROUP @"group.mguellsegarra_callerid"
+#define APP_GROUP @"group.ondori_caller_id"
 
 @interface CallDirectoryHandler () <CXCallDirectoryExtensionContextDelegate>
 
@@ -154,7 +154,7 @@
       for (NSNumber *phoneNumber in sorted) {
         NSString *label = labelsKeyedByPhoneNumber[phoneNumber];
         CXCallDirectoryPhoneNumber auxNumber = (CXCallDirectoryPhoneNumber)[phoneNumber longLongValue];
-//        NSLog(@"OND-Debug: addIdentificationPhoneNumbers: phone: %lld - label: %@", auxNumber, label);
+       NSLog(@"OND-Debug: addIdentificationPhoneNumbers: phone: %lld - label: %@", auxNumber, label);
 
         [context addIdentificationEntryWithNextSequentialPhoneNumber:auxNumber label:label];
       }
@@ -199,5 +199,3 @@
 }
 
 @end
-
-
